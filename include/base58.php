@@ -69,6 +69,7 @@ function address_to_script($btcaddress)
         $testnet = true; // ... fall through
     case 140:
         $testnet = true; // ... fall through
+        break;
     case 5:
         // Pay to script hash:
         // HASH160 push-0x14-bytes ... hash ... EQUAL
