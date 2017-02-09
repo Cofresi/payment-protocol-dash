@@ -87,7 +87,7 @@ If you change the form, you must click the Create Payment Request button to gene
 <h1>Static URIs for testing</h1>
 <p>Old-fashioned dash: URI: <a href="dash:yaVStwYbL6eQs3o23SxNxBdgxC32sn8nUo?amount=0.01&label=Faucet">Send to TP Faucet</a>
 </p>
-<p><a href="dash:yaVStwYbL6eQs3o23SxNxBdgxC32sn8nUo?r=https%3A%2F%2Ffdash.org%2F%7Evcofresi%2Ff.php%3Fh%3D89ea2e87e5b36a000000000000000000&amount=0.1">Invalid request URI</a>
+<p><a href="bitcoin:yaVStwYbL6eQs3o23SxNxBdgxC32sn8nUo?r=https%3A%2F%2Ffdash.org%2F%7Evcofresi%2Ff.php%3Fh%3D89ea2e87e5b36a000000000000000000&amount=0.1">Invalid request URI</a>
 </p>
 <p><a href="dash:yWyQNzD7bAcviPJGj68H3r2AKrX9bobrjv?r=http%3A%2F%2F195.141.143.55%3A5555%2Ff.php%3Fh%3D0e54bc84bdfb9f32383e13329ea69156&amount=0.1">Test URI</a>
 </p>
