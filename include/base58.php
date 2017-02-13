@@ -58,10 +58,10 @@ function address_to_script($btcaddress)
     $testnet = false;
     $script = "";
 
-    echo 'version: ' .  $vhc[0], '<br>';
-    echo 'hash: ' .  $vhc[1], '<br>';
-    echo 'checksum: ' .  $vhc[2], '<br>';
-    switch ($version) {
+//    echo 'version: ' .  $vhc[0], '<br>';
+//    echo 'hash: ' .  $vhc[1], '<br>';
+//    echo 'checksum: ' .  $vhc[2], '<br>';
+//    switch ($version) {
     case 111:
         $testnet = true; // ... fall through
 //        break;
