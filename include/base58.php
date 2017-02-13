@@ -43,7 +43,7 @@ function decode_base58($btcaddress)
 //
 // Convert a Bitcoin address to a raw-bytes Script
 //
-// Returns false if passed an invalid Bitcoin address,
+// Returns false if passed an invalid Dash address,
 // otherwise returns an array
 // containing (boolean fTestnet, string Script)
 //
@@ -57,10 +57,14 @@ function address_to_script($btcaddress)
 
     $testnet = false;
     $script = "";
+
+    echo 'version: ' .  $vhc[0], '<br>';
+    echo 'hash: ' .  $vhc[1], '<br>';
+    echo 'checksum: ' .  $vhc[2], '<br>';
     switch ($version) {
     case 111:
         $testnet = true; // ... fall through
-        break;
+//        break;
     case 0:
         // Pay to public key:
         // DUP HASH160 push-0x14-bytes ...hash... EQUALVERIFY CHECKSIG

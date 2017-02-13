@@ -24,16 +24,16 @@ function validateForm($values, $validationData)
     case 'btcaddress':
       // pattern-match sanity check:
       if (! preg_match('/^[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{27,34}$/',$values[$name])) {
-        $result[$name] = "Invalid bitcoin address ".htmlentities($values[$name]);
+        $result[$name] = "Invalid DASH address ".htmlentities($values[$name]);
       }
       break;
     case 'btcdestination':
-      // Bitcoin address (pay to pubkey or script hash) or
+      // DASH address (pay to pubkey or script hash) or
       // hex public key (raw OP_CHECKSIG) or
       // hex public keys separated by commas (raw OP_CHECKMULTISIG)
       if (! preg_match('/^[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{27,34}$/',$values[$name]) &&
           !preg_match('/^[0123456789ABCDEFabcdef,]{33,201}$/', $values[$name])) {
-        $result[$name] = "Invalid bitcoin destination ".htmlentities($values[$name]);
+        $result[$name] = "Invalid DASH destination ".htmlentities($values[$name]);
       }
       break;
     case 'btcamount':
