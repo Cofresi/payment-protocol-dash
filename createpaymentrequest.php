@@ -259,7 +259,7 @@ ob_end_clean();
 
 $request = (get_magic_quotes_gpc() ? array_map('stripslashes', $_REQUEST) : $_REQUEST);
 
-$validationData['address1'] = array('isRequired', 'type' => 'btcdestination');
+$validationData['address1'] = array('isRequired', 'type' => 'btcaddress');
 $validationData['amount1'] = array('isRequired', 'type' => 'btcamount');
 $validationData['address2'] = array('type' => 'btcdestination');
 $validationData['amount2'] = array('type' => 'btcamount');
