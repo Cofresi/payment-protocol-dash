@@ -60,6 +60,7 @@ function address_to_script($btcaddress)
     switch ($version) {
     case 111:
         $testnet = true; // ... fall through
+        break;
     case 0:
         // Pay to public key:
         // DUP HASH160 push-0x14-bytes ...hash... EQUALVERIFY CHECKSIG
